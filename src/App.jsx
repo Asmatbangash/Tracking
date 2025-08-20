@@ -1,5 +1,5 @@
 import { assets } from "./assets/assets";
-import { Detail, Hero } from "./components";
+import { Detail, Hero, ProjectCard } from "./components";
 
 function App() {
   return (
@@ -9,23 +9,22 @@ function App() {
         <div className="">
           <img src={assets.frame} alt="frame" className="" />
         </div>
-        {/* <div className="absolute top-103 left-90">
-        <img src={assets.MapsicleMap} alt="MapsicleMap" className="h-60" />
-      </div>
-      <div className="absolute top-90 right-100">
-        <img src={assets.Orderdetails} alt="Orderdetails" className="h-80" />
-      </div>
-      <div className="absolute top-130 left-70">
-        <img src={assets.CardShipment} alt="CardShipment" className="h-40" />
-      </div>
-      <div className="absolute top-95 left-90">
-        <img src={assets.map} alt="map" className="h-40" />
-      </div>
-      <div className="absolute top-100 right-60">
-        <img src={assets.Screen9} alt="Screen9" className="h-60" />
-      </div> */}
       </div>
       <Detail />
+      <div className="">
+        <div className="px-20 max-sm:px-2">
+          <div className="flex justify-between items-center py-4">
+            <h1 className="text-2xl">Tracking Apps</h1>
+            <button className="btn btn-info">SEE All</button>
+          </div>
+          <p>
+            Our business proposal introduces a comprehensive family tracking app
+            designed to address the modern challenges of family safety and
+            communication. Leveraging cutting-edge GPS technology.
+          </p>
+        </div>
+        <ProjectCard />
+      </div>
     </>
   );
 }
