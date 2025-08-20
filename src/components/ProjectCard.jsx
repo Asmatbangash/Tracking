@@ -58,7 +58,7 @@ function ProjectCard() {
   return (
     <div className="flex flex-wrap justify-center items-center space-x-4 space-y-5 my-8">
       {cardDetail.slice(0, 6).map((item) => (
-        <div className="card bg-base-100 w-90 shadow-sm">
+        <div className="card bg-base-100 w-90 shadow-sm hover:scale-102">
           <figure>
             <img src={item.image} alt={item.title} className="" />
           </figure>

@@ -8,7 +8,7 @@ function Detail() {
     { counting: "300", name: "Clients" },
   ];
   return (
-    <section className="hero bg-base-200 min-h-screen px-20 max-sm:px-0 max-sm:py-10">
+    <section className="hero  min-h-screen px-20 max-sm:px-0 max-sm:py-10">
       <div className="hero-content flex-col lg:flex-row gap-10">
         {/* Rhombus Wrapper */}
         <div className="relative w-64 h-64 flex items-center justify-center">
@@ -36,7 +36,7 @@ function Detail() {
             CEO Abubakar Siddique
           </h1>
           <h3>Founder & Lead Developer | Tracking Systems Developer</h3>
-          <p className="py-6 text-base leading-relaxed">
+          <p className="py-4 text-base leading-relaxed">
             Pioneering advanced tracking solutions including family safety apps,
             real-time vehicle monitoring systems, and enterprise GPS platforms.
             We transform location data into actionable insights through

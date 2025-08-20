@@ -12,6 +12,11 @@ import Project7 from "./Project7.svg";
 import Project8 from "./Project8.svg";
 import Project9 from "./Project9.svg";
 import Project10 from "./Project10.svg";
+import checkmark from "./checkmark.svg";
+import mobileFrame from "./mobileFrame.png";
+import Zarish from "./Zarish.svg";
+import Fareed from "./Fareed.svg";
+import Qasim from "./Qasim.svg";
 
 export const assets = {
   locationIcon,
@@ -28,4 +33,9 @@ export const assets = {
   Project8,
   Project9,
   Project10,
+  checkmark,
+  mobileFrame,
+  Zarish,
+  Qasim,
+  Fareed,
 };
