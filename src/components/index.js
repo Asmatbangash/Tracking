@@ -6,6 +6,8 @@ import Location from "./Location";
 import ServicesCard from "./ServicesCard";
 import Title from "./Title";
 import Button from "./Button";
+import ClientTestimonials from "./ClientTestimonials";
+import Footer from "./Footer";
 
 export {
   Navbar,
@@ -16,4 +18,6 @@ export {
   ServicesCard,
   Title,
   Button,
+  ClientTestimonials,
+  Footer,
 };

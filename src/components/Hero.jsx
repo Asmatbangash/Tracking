@@ -3,29 +3,35 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { assets } from "../assets/assets";
+import { Link } from "react-router-dom";
 
-const navigation = [
-  { name: "Demo Tracking apps", href: "#", current: true },
-  { name: "Blogs", href: "#", current: false },
-  { name: "My team", href: "#", current: false },
-];
-
-function Hero() {
+function Hero({ heading, paragraph }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigation = [
+    { name: "Demo Tracking apps", href: "/", current: true },
+    { name: "Blogs", href: "/blogs", current: false },
+    { name: "My team", href: "#myTeam", current: false },
+  ];
 
   return (
-    <div className="">
+    <div className="bg-img">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           aria-label="Global"
           className="flex shadow-black items-center justify-between p-6  lg:px-12"
         >
-          <div className="flex items-center">
-            <img alt="Logo" src={assets.locationIcon} className="h-8 w-auto" />
-            <span className="ml-2 text-lg font-semibold text-white">
-              Tracking Apps
-            </span>
-          </div>
+          <Link to={"/"}>
+            <div className="flex items-center">
+              <img
+                alt="Logo"
+                src={assets.locationIcon}
+                className="h-8 w-auto"
+              />
+              <span className="ml-2 text-lg font-semibold text-white">
+                Tracking Apps
+              </span>
+            </div>
+          </Link>
           <div className="flex lg:hidden">
             <button
               type="button"
@@ -38,13 +44,13 @@ function Hero() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="text-sm/6 font-semibold text-white"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         </nav>
@@ -69,13 +75,13 @@ function Hero() {
               <div className="-my-6 ">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
-                      href={item.href}
+                      to={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -85,17 +91,12 @@ function Hero() {
       </header>
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto py-10 sm:py-20 lg:py-30">
+        <div className="mx-auto pt-10 sm:py-t0 lg:pt-30">
           <div className="text-center">
-            <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
-              <span className="text-[#2196F3]">GPS </span> Tracking & Live
-              Location Monitoring Anywhere, Anytime!
+            <h1 className="text-5xl font-bold tracking-tight text-balance text-white sm:text-4xl">
+              {heading}
             </h1>
-            <p className="my-2 text-white">
-              Track vehicles, employees, assets & more in real-time with 99%
-              accuracy.
-            </p>
-            <button className="btn btn-info">Contact Us</button>
+            <p className="mt-2 text-white">{paragraph}</p>
           </div>
         </div>
       </div>

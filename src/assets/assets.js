@@ -1,6 +1,6 @@
 import locationIcon from "./locationIcon.svg";
 import ArtworkImg from "./ArtworkImg.svg";
-import frame from "./frame.png";
+import frame from "./frame.webp";
 import CEO from "./CEO.svg";
 import Project1 from "./Project1.svg";
 import Project2 from "./Project2.svg";
@@ -13,10 +13,17 @@ import Project8 from "./Project8.svg";
 import Project9 from "./Project9.svg";
 import Project10 from "./Project10.svg";
 import checkmark from "./checkmark.svg";
-import mobileFrame from "./mobileFrame.png";
+import mobileFrame from "./mobileFrame.webp";
 import Zarish from "./Zarish.svg";
 import Fareed from "./Fareed.svg";
 import Qasim from "./Qasim.svg";
+import clientImg from "./clientImg.webp";
+import whatsapp from "./whatsapp.webp";
+import facebook from "./facebook.svg";
+import intagram from "./INSTAGRAM.svg";
+import linkdin from "./LINKEDIN.svg";
+import Twitter from "./Twitter.svg";
+import footerLogo from "./FooterLogo.svg";
 
 export const assets = {
   locationIcon,
@@ -38,4 +45,11 @@ export const assets = {
   Zarish,
   Qasim,
   Fareed,
+  clientImg,
+  whatsapp,
+  facebook,
+  intagram,
+  linkdin,
+  Twitter,
+  footerLogo,
 };

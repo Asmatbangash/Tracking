@@ -8,7 +8,7 @@ function Detail() {
     { counting: "300", name: "Clients" },
   ];
   return (
-    <section className="hero  min-h-screen px-20 max-sm:px-0 max-sm:py-10">
+    <section className="hero my-10 px-20 max-sm:px-0 max-sm:py-10">
       <div className="hero-content flex-col lg:flex-row gap-10">
         {/* Rhombus Wrapper */}
         <div className="relative w-64 h-64 flex items-center justify-center">
@@ -16,7 +16,6 @@ function Detail() {
           <div className="absolute w-full h-full bg-gradient-to-tr from-blue-200 to-blue-200 rotate-45  rounded-lg"></div>
 
           <div className="relative w-80 flex flex-col items-center">
-            {/* Image */}
             <div className="w-60  overflow-hidden rotate-45 relative z-10 ">
               <img
                 src={assets.CEO}
@@ -32,7 +31,7 @@ function Detail() {
 
         {/* Text Content */}
         <div className="text-center px-20 max-sm:px-0 max-sm:my-10 lg:text-left">
-          <h1 className="text-3xl md:text-5xl font-bold">
+          <h1 className="text-3xl md:text-5xl font-bold mt-8">
             CEO Abubakar Siddique
           </h1>
           <h3>Founder & Lead Developer | Tracking Systems Developer</h3>
