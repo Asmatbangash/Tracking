@@ -2,11 +2,11 @@ import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Detail from "./Detail";
 import ProjectCard from "./ProjectCard";
-import Location from "./Location";
 import ServicesCard from "./ServicesCard";
 import Title from "./Title";
 import Button from "./Button";
 import ClientTestimonials from "./ClientTestimonials";
+import BlogCard from "./BlogCard";
 import Footer from "./Footer";
 
 export {
@@ -14,10 +14,10 @@ export {
   Hero,
   Detail,
   ProjectCard,
-  Location,
   ServicesCard,
   Title,
   Button,
   ClientTestimonials,
+  BlogCard,
   Footer,
 };

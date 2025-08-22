@@ -5,11 +5,11 @@ import {
   ClientTestimonials,
   Detail,
   Hero,
-  Location,
   ProjectCard,
   ServicesCard,
   Title,
 } from "../components";
+import { FaLocationArrow } from "react-icons/fa";
 
 function Home() {
   const team = [
@@ -97,7 +97,12 @@ function Home() {
         />
         <Button
           className="btn bg-[#1C7DD5] text-white my-8"
-          text="Contact Us"
+          text={
+            <>
+              Contact Us
+              <FaLocationArrow />
+            </>
+          }
         />
         <div className="">
           <img src={assets.frame} alt="frame" className="" />
@@ -130,7 +135,11 @@ function Home() {
               " Our business proposal introduces a comprehensive family tracking app            designed to address the modern  challenges of family safetyand communication. Leveraging cutting-edge GPS technology."
             }
           />
-          <Location />
+          <img
+            src={assets.MapsicleMap}
+            alt="map"
+            className="w-full py-5 px-20 max-sm:px-5"
+          />
         </div>
         <div className="text-center">
           <Title
@@ -151,7 +160,7 @@ function Home() {
           />
           <img src={assets.mobileFrame} alt="mobileFrame" className="" />
         </div>
-        <div>
+        <div id="myTeam">
           <Title
             title={"Our Team of Experts"}
             desc={

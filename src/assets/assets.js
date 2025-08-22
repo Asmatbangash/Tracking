@@ -24,6 +24,7 @@ import intagram from "./INSTAGRAM.svg";
 import linkdin from "./LINKEDIN.svg";
 import Twitter from "./Twitter.svg";
 import footerLogo from "./FooterLogo.svg";
+import MapsicleMap from "./MapsicleMap.webp";
 
 export const assets = {
   locationIcon,
@@ -52,4 +53,5 @@ export const assets = {
   linkdin,
   Twitter,
   footerLogo,
+  MapsicleMap,
 };
