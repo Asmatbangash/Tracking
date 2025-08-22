@@ -42,6 +42,7 @@ function ServicesCard() {
                 src={assets.checkmark}
                 alt="service-icon"
                 className="w-7 h-7"
+                loading="lazy"
               />
             </div>
             <h3 className="text-lg font-semibold text-gray-800 mb-2">

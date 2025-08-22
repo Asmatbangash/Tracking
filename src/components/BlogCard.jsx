@@ -4,13 +4,14 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 function BlogCard({ data }) {
   return (
-    <div className="hero m-4 shadow-2xl">
-      <div className="hero-content flex-col lg:flex-row">
+    <div className="flex justify-center items-center m-4 shadow-2xl rounded-2xl">
+      <div className="flex justify-between items-center flex-col md:flex-row">
         <img
           src={data.image}
-          className="max-w-sm max-md:max-w-full rounded-lg"
+          loading="lazy"
+          className="max-w-sm p-4 rounded-lg"
         />
-        <div>
+        <div className="mx-4">
           <h1 className="text-2xl font-bold">{data.title}</h1>
           <p>{data.shortDesc}</p>
           <p className="py-6">{data.longDesc}</p>

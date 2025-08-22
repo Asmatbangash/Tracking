@@ -21,6 +21,7 @@ function Detail() {
                 src={assets.CEO}
                 alt="CEO Abubakar Siddique"
                 className="-rotate-45 w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
 
