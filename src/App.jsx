@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Footer, Hero } from "./components";
+import { Footer } from "./components";
 
 function App() {
   return (
