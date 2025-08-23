@@ -4,11 +4,11 @@ import { assets } from "../assets/assets";
 function Footer() {
   const socailImages = [
     {
-      image: assets.facebook,
+      image: assets.Facebook,
       href: "",
     },
     {
-      image: assets.linkdin,
+      image: assets.LINKEDIN,
       href: "",
     },
     {
@@ -16,7 +16,7 @@ function Footer() {
       href: "",
     },
     {
-      image: assets.intagram,
+      image: assets.Instagram,
       href: "",
     },
   ];

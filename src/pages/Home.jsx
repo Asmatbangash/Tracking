@@ -51,32 +51,32 @@ function Home() {
 
   const projectsData = [
     {
-      image: assets.Project1,
+      image: assets.Seentul,
       title: "Mobile application/Seentul",
       desc: "A family safety and lifestyle app that integrates live location sharing, SOS alerts, and emergency assistance to keep loved ones connected and secure.",
     },
     {
-      image: assets.Project2,
+      image: assets.GrandCorsa,
       title: "Mobile application/Grand Corsa",
       desc: "A smart driving companion app offering route tracking, trip history, and vehicle performance insights for a safer and more efficient driving experience.",
     },
     {
-      image: assets.Project3,
+      image: assets.WorldTreasure,
       title: "Mobile application/World Treasure",
       desc: "A location-based adventure and treasure-hunt application combining gamification, GPS navigation, and interactive challenges for an engaging user journey.",
     },
     {
-      image: assets.Project4,
+      image: assets.Luggs,
       title: "Mobile application/Luggs",
       desc: "A modern logistics tracking tool for individuals and businesses, enabling asset monitoring, delivery tracking, and real-time GPS insights.",
     },
     {
-      image: assets.Project5,
+      image: assets.Yilomi,
       title: "Mobile application/Yilomi",
       desc: "A personal and enterprise tracking solution designed to monitor movement, assets, and activities with customizable alerts and detailed reports.",
     },
     {
-      image: assets.Project6,
+      image: assets.iball,
       title: "Mobile application/iball",
       desc: "An innovative mobile tracking platform offering real-time GPS monitoring, smart alerts, and data analytics for enhanced security and control.",
     },
@@ -192,7 +192,7 @@ function Home() {
             designed to address the modern challenges of family safety and
             communication. Leveraging cutting-edge GPS technology.
           </p>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-6 py-10">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6 py-10 bg-img">
             {reviewCard.map((data) => (
               <ClientTestimonials
                 description={data.desc}
