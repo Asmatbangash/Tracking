@@ -54,10 +54,20 @@ function Projects() {
       title: "Mobile application/Labor dia",
       desc: "A workforce productivity platform with GPS-based monitoring, attendance tracking, and project management tools tailored for labor-intensive industries.",
     },
+    {
+      image: assets.zifixers,
+      title: "Mobile application/zifixers",
+      desc: "A fleet management app designed for trucking and logistics, featuring route optimization, live tracking, driver performance insights, and safety monitoring.",
+    },
+    {
+      image: assets.Parcelink,
+      title: "Mobile application/Parcelink",
+      desc: "A fleet management app designed for trucking and logistics, featuring route optimization, live tracking, driver performance insights, and safety monitoring.",
+    },
   ];
   return (
     <>
-      <div className="bg-gradient-to-b from-[#000313] via-[#024c8d] to-[#FFFFFF] flex justify-center items-center flex-col">
+      <div className="bg-gradient-to-b from-[#000313] via-[#024c8d] to[#FFFFFF] flex justify-center items-center flex-col">
         <Hero
           heading={
             <>

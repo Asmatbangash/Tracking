@@ -1,4 +1,3 @@
-import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Detail from "./Detail";
 import ProjectCard from "./ProjectCard";
@@ -10,7 +9,6 @@ import BlogCard from "./BlogCard";
 import Footer from "./Footer";
 
 export {
-  Navbar,
   Hero,
   Detail,
   ProjectCard,

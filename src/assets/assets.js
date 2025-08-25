@@ -26,6 +26,8 @@ import Zarish from "./images/Zarish.webp";
 import checkmark from "./images/checkmark.svg";
 import Vector from "./images/Vector.webp";
 import footerLogo from "./images/footerLogo.webp";
+import zifixers from "./images/Zifixers.webp";
+import Parcelink from "./images/Parcelink.webp";
 
 export const assets = {
   ArtworkImg,
@@ -56,4 +58,6 @@ export const assets = {
   checkmark,
   Vector,
   footerLogo,
+  zifixers,
+  Parcelink,
 };

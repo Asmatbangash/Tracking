@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 function Hero({ heading, paragraph }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigation = [
-    { name: "Demo Tracking apps", href: "/", current: true },
-    { name: "Blogs", href: "/blogs", current: false },
-    { name: "My team", href: "#myTeam", current: false },
+    { name: "Demo Tracking apps", href: "/projects" },
+    { name: "Blogs", href: "/blogs" },
+    { name: "My Team", href: "#myTeam" },
   ];
 
   return (
@@ -91,9 +91,9 @@ function Hero({ heading, paragraph }) {
       </header>
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto pt-10 sm:py-t0 lg:pt-30">
+        <div className="mx-auto pt-10 sm:py-4 lg:pt-30">
           <div className="text-center">
-            <h1 className="text-5xl font-bold tracking-tight text-balance text-white sm:text-4xl">
+            <h1 className="text-5xl font-bold tracking-tight text-balance text-white max-sm:text-3xl max-sm:mb-5">
               {heading}
             </h1>
             <p className="mt-2 text-white">{paragraph}</p>
