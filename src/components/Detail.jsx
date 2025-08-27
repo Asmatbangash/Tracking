@@ -13,9 +13,9 @@ function Detail() {
         {/* Rhombus Wrapper */}
         <div className="relative w-64 h-64 flex items-center justify-center">
           {/* Rhombus background */}
-          <div className="absolute w-full h-full bg-gradient-to-tr from-blue-200 to-blue-200 rotate-45  rounded-lg"></div>
-          <div className="relative w-80 flex flex-col items-center ">
-            <div className="w-60 rotate-45 relative z-10 overflow-hidden">
+          <div className="absolute w-full h-full bg-gradient-to-tr from-blue-200 to-blue-100 rotate-45  rounded-lg"></div>
+          <div className="relative w-80 flex flex-col items-center">
+            <div className="relative w-64 sm:w-72 rotate-45 overflow-hidden">
               <img
                 src={assets.CEO}
                 alt="CEO Abubakar Siddique"

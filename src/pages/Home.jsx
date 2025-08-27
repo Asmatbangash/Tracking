@@ -83,29 +83,29 @@ function Home() {
   ];
   return (
     <>
-      <div className=" bg-gradient-to-b from-[#000313] via-[#1079d3] to-[#FFFFFF] flex justify-center items-center flex-col">
-        <Hero
-          heading={
-            <>
-              <span className="text-[#74c1ff]">GPS </span>
-              Tracking & Live Location <br /> Monitoring Anywhere, Anytime!
-            </>
-          }
-          paragraph={
-            "Track vehicles, employees, assets & more in real-time with 99% accuracy"
-          }
-        />
-        <Button
-          className="btn bg-[#1C7DD5] text-white my-8"
-          text={
-            <>
-              Contact Us
-              <FaLocationArrow />
-            </>
-          }
-        />
-        <div className="">
-          <img src={assets.frame} alt="frame" className="" />
+      <div className="bg-gradient-to-b from-[#000313] via-[#1079d3] to-[#FFFFFF] ">
+        <div className="bg-img flex justify-center items-center flex-col">
+          <Hero
+            heading={
+              <>
+                <span className="text-[#74c1ff]">GPS </span>
+                Tracking & Live Location <br /> Monitoring Anywhere, Anytime!
+              </>
+            }
+            paragraph={
+              "Track vehicles, employees, assets & more in real-time with 99% accuracy"
+            }
+          />
+          <Button
+            className="btn bg-[#1C7DD5] text-white my-8"
+            text={
+              <>
+                Contact Us
+                <FaLocationArrow />
+              </>
+            }
+          />
+          <img src={assets.frame} alt="" />
         </div>
       </div>
       <Detail />
