@@ -20,7 +20,7 @@ function Detail() {
         </div>
 
         {/* Text Content */}
-        <div className="text-center px-20 max-sm:px-0 max-sm:my-10 lg:text-left">
+        <div className="text-center px-10 max-sm:px-0 max-sm:my-10 lg:text-left">
           <h1 className="text-3xl font-bold mt-8">CEO Abubakar Siddique</h1>
           <h3>Founder & Lead Developer | Tracking Systems Developer</h3>
           <p className="py-4 text-base leading-relaxed">

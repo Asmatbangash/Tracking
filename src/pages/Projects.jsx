@@ -72,7 +72,7 @@ function Projects() {
           <Hero
             heading={
               <>
-                Our <span className="text-[#74c1ff]">Projects</span> <br />
+                Our <span className="text-[#168BEB]">Projects</span> <br />
                 Have a project in mind? <br /> Let’s get to work.
               </>
             }

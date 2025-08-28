@@ -43,5 +43,11 @@ width: 100%;
   }
 }
 
+.bg-footer{
+  background-image: url('./assets/images/Rectangle.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 
 

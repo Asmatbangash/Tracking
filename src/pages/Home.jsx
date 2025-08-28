@@ -104,6 +104,11 @@ function Home() {
               </>
             }
           />
+          <img
+            src={assets.locationArrow}
+            alt="location Arrow"
+            className="absolute right-60 max-sm:right-10 top-80  w-12 h-12"
+          />
           <img src={assets.frame} alt="" />
         </div>
       </div>
@@ -122,6 +127,7 @@ function Home() {
             communication. Leveraging cutting-edge GPS technology.
           </p>
         </div>
+        {/* Project section */}
         <div className="grid gap-8 sm:gap-10 sm:grid-cols-2 lg:grid-cols-3 mx-10 max-sm:mx-0">
           {projectsData.map((item) => (
             <ProjectCard item={item} />
@@ -140,6 +146,7 @@ function Home() {
             className="w-full py-5 px-20 max-sm:px-5"
           />
         </div>
+        {/* Services Section */}
         <div className="text-center">
           <Title
             title={"Our Services"}
@@ -153,6 +160,7 @@ function Home() {
             className="btn text-white py-2 px-4 bg-[#2196F3]"
           />
         </div>
+        {/* Mobile Frame Section */}
         <div className="flex justify-center items-center flex-col my-8">
           <Title
             title={"Family locator App"}
@@ -168,6 +176,7 @@ function Home() {
             />
           </div>
         </div>
+        {/* Team section */}
         <div id="myTeam">
           <Title
             title={"Our Team of Experts"}
@@ -192,7 +201,7 @@ function Home() {
           </div>
         </div>
         <div className="bg-img py-10 flex justify-center items-center flex-col text-white">
-          <h1 className="text-3xl font-bold mb-">Client Testimonials</h1>
+          <h1 className="text-3xl font-bold my-4">Client Testimonials</h1>
           <p className="text-white text-center max-w-2xl mx-auto">
             Our business proposal introduces a comprehensive family tracking app
             designed to address the modern challenges of family safety and
@@ -231,7 +240,7 @@ function Home() {
 
             {/* Button */}
             <Button
-              className="btn bg-white text-[#1C7DD5] my-8 py-2 px-6"
+              className="btn bg-white text-[#1C7DD5] py-2 px-6"
               text={
                 <>
                   Write To Us

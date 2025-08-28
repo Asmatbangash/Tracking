@@ -30,6 +30,8 @@ import zifixers from "./images/Zifixers.webp";
 import Parcelink from "./images/Parcelink.webp";
 import sent from "./images/sent.webp";
 import sentBlue from "./images/sentBlue.webp";
+import Rectangle from "./images/Rectangle.webp";
+import locationArrow from "./images/locationArrow.webp";
 
 export const assets = {
   ArtworkImg,
@@ -64,4 +66,6 @@ export const assets = {
   Parcelink,
   sent,
   sentBlue,
+  Rectangle,
+  locationArrow,
 };
