@@ -14,11 +14,11 @@ function Hero({ heading, paragraph }) {
   ];
 
   return (
-    <div className="bg-img">
+    <div className="w-full">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           aria-label="Global"
-          className="flex shadow-black items-center justify-between p-6  lg:px-12"
+          className="flex items-center justify-between p-6  lg:px-12"
         >
           <Link to={"/"}>
             <div className="flex items-center">

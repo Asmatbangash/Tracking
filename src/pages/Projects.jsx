@@ -67,17 +67,19 @@ function Projects() {
   ];
   return (
     <>
-      <div className="bg-gradient-to-b from-[#000313] via-[#024c8d] to[#FFFFFF] flex justify-center items-center flex-col">
-        <Hero
-          heading={
-            <>
-              Our <span className="text-[#74c1ff]">Projects</span> <br />
-              Have a project in mind? <br /> Let’s get to work.
-            </>
-          }
-        />
+      <div className="">
+        <div className="bg-img flex justify-center items-center flex-col">
+          <Hero
+            heading={
+              <>
+                Our <span className="text-[#74c1ff]">Projects</span> <br />
+                Have a project in mind? <br /> Let’s get to work.
+              </>
+            }
+          />
+        </div>
       </div>
-      <div className="flex flex-wrap justify-center items-center space-x-4 space-y-5 my-8">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 my-10">
         {projectsData.map((item) => (
           <ProjectCard item={item} />
         ))}

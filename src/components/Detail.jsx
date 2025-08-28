@@ -8,32 +8,20 @@ function Detail() {
     { counting: "300", name: "Clients" },
   ];
   return (
-    <section className="hero my-10 px-20 max-sm:px-0 max-sm:py-10">
-      <div className="hero-content flex-col lg:flex-row gap-10">
-        {/* Rhombus Wrapper */}
-        <div className="relative w-64 h-64 flex items-center justify-center">
-          {/* Rhombus background */}
-          <div className="absolute w-full h-full bg-gradient-to-tr from-blue-200 to-blue-100 rotate-45  rounded-lg"></div>
-          <div className="relative w-80 flex flex-col items-center">
-            <div className="relative w-64 sm:w-72 rotate-45 overflow-hidden">
-              <img
-                src={assets.CEO}
-                alt="CEO Abubakar Siddique"
-                className="-rotate-45 w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-
-            {/* Blue line under image */}
-            <div className="w-80 h-10 bg-blue-500 -rotate-10"></div>
-          </div>
+    <section className="hero my-10 px-20 max-md:px-0 max-sm:py-4">
+      <div className="hero-content flex-col lg:flex-row">
+        <div className="">
+          <img
+            src={assets.CEO}
+            alt="CEO Abubakar Siddique"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
         </div>
 
         {/* Text Content */}
         <div className="text-center px-20 max-sm:px-0 max-sm:my-10 lg:text-left">
-          <h1 className="text-3xl md:text-5xl font-bold mt-8">
-            CEO Abubakar Siddique
-          </h1>
+          <h1 className="text-3xl font-bold mt-8">CEO Abubakar Siddique</h1>
           <h3>Founder & Lead Developer | Tracking Systems Developer</h3>
           <p className="py-4 text-base leading-relaxed">
             Pioneering advanced tracking solutions including family safety apps,

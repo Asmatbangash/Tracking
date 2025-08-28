@@ -9,7 +9,6 @@ import {
   ServicesCard,
   Title,
 } from "../components";
-import { FaLocationArrow } from "react-icons/fa";
 
 function Home() {
   const team = [
@@ -83,7 +82,7 @@ function Home() {
   ];
   return (
     <>
-      <div className="bg-gradient-to-b from-[#000313] via-[#1079d3] to-[#FFFFFF] ">
+      <div className=" ">
         <div className="bg-img flex justify-center items-center flex-col">
           <Hero
             heading={
@@ -97,11 +96,11 @@ function Home() {
             }
           />
           <Button
-            className="btn bg-[#1C7DD5] text-white my-8"
+            className="btn bg-[#1C7DD5] text-white my-8 py-2 px-6"
             text={
               <>
                 Contact Us
-                <FaLocationArrow />
+                <img src={assets.sent} alt="sent" className="w-4 h-4" />
               </>
             }
           />
@@ -110,7 +109,7 @@ function Home() {
       </div>
       <Detail />
       <div className="">
-        <div className="px-20 max-md:px-4 max-sm:px-2">
+        <div className="px-10 max-md:px-4 max-sm:px-2">
           <div className="flex justify-between items-center py-4">
             <h1 className="text-2xl">Tracking Apps</h1>
             <Link to="/projects">
@@ -123,7 +122,7 @@ function Home() {
             communication. Leveraging cutting-edge GPS technology.
           </p>
         </div>
-        <div className="flex flex-wrap justify-center items-center space-x-4 space-y-5 my-8">
+        <div className="grid gap-8 sm:gap-10 sm:grid-cols-2 lg:grid-cols-3 mx-10 max-sm:mx-0">
           {projectsData.map((item) => (
             <ProjectCard item={item} />
           ))}
@@ -149,16 +148,25 @@ function Home() {
             }
           />
           <ServicesCard />
-          <Button text={"Load More..."} className="btn btn-info" />
+          <Button
+            text={"Load More"}
+            className="btn text-white py-2 px-4 bg-[#2196F3]"
+          />
         </div>
-        <div className="flex justify-center items-center flex-col">
+        <div className="flex justify-center items-center flex-col my-8">
           <Title
             title={"Family locator App"}
             desc={
               "With the advanced features of our app, parents can be more focused and satisfied, and family members can feel safe and protected"
             }
           />
-          <img src={assets.mobileFrame} alt="mobileFrame" className="" />
+          <div className="bgMobileFrame flex justify-center items-center">
+            <img
+              src={assets.mobileFrame}
+              alt="mobileFrame"
+              className="w-100 h-100 my-10"
+            />
+          </div>
         </div>
         <div id="myTeam">
           <Title
@@ -175,24 +183,22 @@ function Home() {
                   alt={member.name}
                   className="w-50 h-50"
                 />
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-sm text-blue-300 leading-relaxed">
+                <h3 className="text-lg font-semibold mb-2">{member.name}</h3>
+                <p className="text-lg text-[#2196F3] leading-relaxed">
                   {member.pasion}
                 </p>
               </div>
             ))}
           </div>
         </div>
-        <div className="py-10 bg-gradient-to-b from-[#000313] via-[#1079d3] to-[#FFFFFF]  flex justify-center items-center flex-col text-white">
+        <div className="bg-img py-10 flex justify-center items-center flex-col text-white">
           <h1 className="text-3xl font-bold mb-">Client Testimonials</h1>
           <p className="text-white text-center max-w-2xl mx-auto">
             Our business proposal introduces a comprehensive family tracking app
             designed to address the modern challenges of family safety and
             communication. Leveraging cutting-edge GPS technology.
           </p>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-6 py-10 bg-img">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6 py-10 ">
             {reviewCard.map((data) => (
               <ClientTestimonials
                 description={data.desc}
@@ -210,7 +216,7 @@ function Home() {
             <img
               src={assets.whatsapp}
               alt="whatsapp"
-              className="h-14 w-14 rounded-full object-cover"
+              className="h-14 w-14 object-cover"
             />
 
             {/* Text */}
@@ -225,8 +231,13 @@ function Home() {
 
             {/* Button */}
             <Button
-              text={"WRITE TO US"}
-              className="bg-white text-[#1079d3] px-6 py-2 md:px-8 md:py-3 font-medium rounded-lg shadow-md hover:bg-gray-100 transition"
+              className="btn bg-white text-[#1C7DD5] my-8 py-2 px-6"
+              text={
+                <>
+                  Write To Us
+                  <img src={assets.sentBlue} alt="sent" className="w-4 h-4" />
+                </>
+              }
             />
           </div>
         </div>

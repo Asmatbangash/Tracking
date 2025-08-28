@@ -28,6 +28,8 @@ import Vector from "./images/Vector.webp";
 import footerLogo from "./images/footerLogo.webp";
 import zifixers from "./images/Zifixers.webp";
 import Parcelink from "./images/Parcelink.webp";
+import sent from "./images/sent.webp";
+import sentBlue from "./images/sentBlue.webp";
 
 export const assets = {
   ArtworkImg,
@@ -60,4 +62,6 @@ export const assets = {
   footerLogo,
   zifixers,
   Parcelink,
+  sent,
+  sentBlue,
 };

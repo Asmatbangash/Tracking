@@ -13,3 +13,35 @@ background-size: cover;
 width: 100%;
 }
 
+.bgMobileFrame {
+  background-image: url('./assets/images/bgMobileFrame.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 70%;
+  margin: 0 auto; /* center it */
+}
+
+/* Small screens (phones) */
+@media (max-width: 640px) {
+  .bgMobileFrame {
+    width: 100%;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .bgMobileFrame {
+    width: 85%;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
+  .bgMobileFrame {
+    width: 70%;
+  }
+}
+
+
+
