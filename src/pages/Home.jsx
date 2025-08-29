@@ -82,51 +82,49 @@ function Home() {
   ];
   return (
     <>
-      <div className="w-full h-full">
-        <div className="bg-img flex justify-center items-center flex-col text-center px-4 relative">
-          <Hero
-            heading={
+      <div className="bg-img flex justify-center items-center flex-col text-center px-4 relative">
+        <Hero
+          heading={
+            <>
+              <span className="text-[#74c1ff]">GPS </span>
+              Tracking & Live Location <br className="hidden md:block" />
+              Monitoring Anywhere, Anytime!
+            </>
+          }
+          paragraph={
+            "Track vehicles, employees, assets & more in real-time with 99% accuracy"
+          }
+        />
+
+        {/* WhatsApp Button */}
+        <a
+          href="https://wa.me/923319882782"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full flex justify-center"
+        >
+          <Button
+            className="btn bg-[#1C7DD5] text-white my-6 py-2 px-6 rounded-md text-sm sm:text-base md:text-lg"
+            text={
               <>
-                <span className="text-[#74c1ff]">GPS </span>
-                Tracking & Live Location <br className="hidden md:block" />
-                Monitoring Anywhere, Anytime!
+                Contact Us
+                <img src={assets.sent} alt="sent" className="w-4 h-4 ml-2" />
               </>
             }
-            paragraph={
-              "Track vehicles, employees, assets & more in real-time with 99% accuracy"
-            }
           />
+        </a>
 
-          {/* WhatsApp Button */}
-          <a
-            href="https://wa.me/923319882782"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full flex justify-center"
-          >
-            <Button
-              className="btn bg-[#1C7DD5] text-white my-6 py-2 px-6 rounded-md text-sm sm:text-base md:text-lg"
-              text={
-                <>
-                  Contact Us
-                  <img src={assets.sent} alt="sent" className="w-4 h-4 ml-2" />
-                </>
-              }
-            />
-          </a>
-
-          {/* Location Arrow Image */}
-          <img
-            src={assets.locationArrow}
-            alt="location Arrow"
-            className="absolute w-10 h-10 md:w-12 md:h-12 right-6 md:right-20 lg:right-60 top-60 md:top-72 lg:top-80"
-          />
-          <img
-            src={assets.frame}
-            alt="frame"
-            className="w-full h-auto object-cover relative top-20"
-          />
-        </div>
+        {/* Location Arrow Image */}
+        <img
+          src={assets.locationArrow}
+          alt="location Arrow"
+          className="absolute w-10 h-10 md:w-12 md:h-12 right-6 md:right-20 lg:right-60 top-60 md:top-72 lg:top-80"
+        />
+        <img
+          src={assets.frame}
+          alt="frame"
+          className="w-full object-cover relative top-20"
+        />
       </div>
 
       <Detail />
