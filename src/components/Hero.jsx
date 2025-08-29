@@ -3,11 +3,12 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { assets } from "../assets/assets";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Hero({ heading, paragraph }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigation = [
+    { name: "Home", href: "/" },
     { name: "Demo Tracking apps", href: "/projects" },
     { name: "Blogs", href: "/blogs" },
     { name: "My Team", href: "#myTeam" },
@@ -75,13 +76,13 @@ function Hero({ heading, paragraph }) {
               <div className="-my-6 ">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <Link
+                    <NavLink
                       key={item.name}
                       to={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white"
                     >
                       {item.name}
-                    </Link>
+                    </NavLink>
                   ))}
                 </div>
               </div>
