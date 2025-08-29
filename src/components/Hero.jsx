@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { assets } from "../assets/assets";
 import { Link, NavLink } from "react-router-dom";
 
-function Hero({ heading, paragraph }) {
+function Hero({ heading, paragraph, onMyTeamClick }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigation = [
     { name: "Home", href: "/" },
@@ -49,6 +49,7 @@ function Hero({ heading, paragraph }) {
                 key={item.name}
                 to={item.href}
                 className="text-sm/6 font-semibold text-white"
+                onClick={onMyTeamClick}
               >
                 {item.name}
               </Link>

@@ -9,6 +9,7 @@ import {
   ServicesCard,
   Title,
 } from "../components";
+import { useRef } from "react";
 
 function Home() {
   const team = [
@@ -80,10 +81,17 @@ function Home() {
       desc: "A fleet management app designed for trucking and logistics, featuring route optimization, live tracking, driver performance insights, and safety monitoring.",
     },
   ];
+
+  const myTeam = useRef(null);
+
+  const scrollToSection = (sectionRef) => {
+    sectionRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <div className="bg-img flex justify-center items-center flex-col text-center px-4 relative">
         <Hero
+          onMyTeamClick={() => scrollToSection(myTeam)}
           heading={
             <>
               <span className="text-[#74c1ff]">GPS </span>
