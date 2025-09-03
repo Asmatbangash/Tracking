@@ -117,7 +117,7 @@ function Hero({ heading, paragraph }) {
       <div className="relative isolate px-6 pt-20 lg:px-8">
         <div className="mx-auto pt-10 sm:py-4 lg:pt-30">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-balance text-white max-sm:text-3xl max-sm:mb-5">
+            <h1 className="text-6xl font-semibold tracking-tight text-balance text-white max-sm:text-4xl max-sm:mb-5">
               {heading}
             </h1>
             <p className="mt-2 text-white">{paragraph}</p>
