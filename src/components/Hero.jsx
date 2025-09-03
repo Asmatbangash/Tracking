@@ -8,11 +8,12 @@ import { HashLink } from "react-router-hash-link";
 
 function Hero({ heading, paragraph }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   const navigation = [
     { name: "Home", href: "/", type: "route" },
     { name: "Demo Tracking apps", href: "/projects", type: "route" },
     { name: "Blogs", href: "/blogs", type: "route" },
-    { name: "My Team", href: "/#myTeam", type: "hash" }, // 👈 force it to home + hash
+    { name: "My Team", href: "/#myTeam", type: "hash" },
   ];
 
   return (
@@ -20,12 +21,12 @@ function Hero({ heading, paragraph }) {
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           aria-label="Global"
-          className="flex items-center justify-between p-6  lg:px-12"
+          className="flex items-center justify-between p-6 lg:px-12"
         >
           <Link to={"/"}>
             <div className="flex items-center">
               <img
-                alt="Logo"
+                alt="Tracking Apps Logo"
                 src={assets.locationIcon}
                 className="h-8 w-auto"
               />
@@ -34,6 +35,7 @@ function Hero({ heading, paragraph }) {
               </span>
             </div>
           </Link>
+          {/* Mobile menu button */}
           <div className="flex lg:hidden">
             <button
               type="button"
@@ -44,6 +46,7 @@ function Hero({ heading, paragraph }) {
               <Bars3Icon aria-hidden="true" className="size-6" />
             </button>
           </div>
+          {/* Desktop nav */}
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) =>
               item.type === "hash" ? (
@@ -51,22 +54,28 @@ function Hero({ heading, paragraph }) {
                   smooth
                   key={item.name}
                   to={item.href}
-                  className="text-sm/6 font-semibold text-white"
+                  className="text-sm font-semibold leading-6 text-white"
                 >
                   {item.name}
                 </HashLink>
               ) : (
-                <Link
+                <NavLink
                   key={item.name}
                   to={item.href}
-                  className="text-sm/6 font-semibold text-white"
+                  className={({ isActive }) =>
+                    `text-sm font-semibold leading-6 ${
+                      isActive ? "text-yellow-400" : "text-white"
+                    }`
+                  }
                 >
                   {item.name}
-                </Link>
+                </NavLink>
               )
             )}
           </div>
         </nav>
+
+        {/* Mobile menu */}
         <Dialog
           open={mobileMenuOpen}
           onClose={setMobileMenuOpen}
@@ -85,7 +94,7 @@ function Hero({ heading, paragraph }) {
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 ">
+              <div className="-my-6">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) =>
                     item.type === "hash" ? (
@@ -93,7 +102,8 @@ function Hero({ heading, paragraph }) {
                         smooth
                         key={item.name}
                         to={item.href}
-                        className="text-sm/6 font-semibold text-white"
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="block text-sm font-semibold leading-6 text-white"
                       >
                         {item.name}
                       </HashLink>
@@ -101,7 +111,8 @@ function Hero({ heading, paragraph }) {
                       <Link
                         key={item.name}
                         to={item.href}
-                        className="text-sm/6 font-semibold text-white"
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="block text-sm font-semibold leading-6 text-white"
                       >
                         {item.name}
                       </Link>
@@ -114,8 +125,9 @@ function Hero({ heading, paragraph }) {
         </Dialog>
       </header>
 
+      {/* Hero content */}
       <div className="relative isolate px-6 pt-20 lg:px-8">
-        <div className="mx-auto pt-10 sm:py-4 lg:pt-30">
+        <div className="mx-auto pt-10 sm:py-4 lg:pt-32">
           <div className="text-center">
             <h1 className="text-6xl font-semibold tracking-tight text-balance text-white max-sm:text-4xl max-sm:mb-5">
               {heading}
